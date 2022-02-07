@@ -46,6 +46,7 @@ ENV LD_LIBRARY_PATH=/usr/local/hadoop/lib/native:$LD_LIBRARY_PATH
 ENV HBASE_HOME=/usr/local/hbase
 ENV CLASSPATH=$CLASSPATH:/usr/local/hbase/lib/*
 ENV PATH=$PATH:/usr/local/hadoop/bin:/usr/local/hadoop/sbin:/usr/local/spark/bin:/usr/local/kafka/bin:/usr/local/hbase/bin 
+ENV PYSPARK_PYTHON=/usr/bin/python3.5
 
 # ssh without key
 RUN ssh-keygen -t rsa -f ~/.ssh/id_rsa -P '' && \
